@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script language="JavaScript" src="text1.js"></script>
+<script type="text/javascript">    
+    function changeImg1() 
+    { 
+    var obj=document.getElementById("obj");     
+    if (curIndex==arr.length-1)      
+    { 
+        curIndex=0;     
+    }     
+    else     
+        {
+        curIndex+=1;  
+          
+    } 
+     
+   obj .src=arr[curIndex];
+    
+     } 
+</script> <!--图片加1!-->
+<script type="text/javascript">
+    function changeImg2() 
+    { 
+    var obj=document.getElementById("obj");     
+    if (curIndex==0)      
+    { 
+        curIndex=arr.length-1;     
+    }     
+    else     
+        {
+        curIndex=curIndex-1;  
+          
+    } 
+     
+   obj .src=arr[curIndex];
+    
+     } 
+</script> <!--图片减1!-->
+
+<style type="text/css">
+ .a{
+     text-align:center;
+
+ }
+  .back1{position:absolute;background-color:black;left:348px;width:100px;height:270px;}
+  .p1{top:35%;position: absolute;left: 50%;}
+  .back2{background-color:black;left:1085px;width:100px;height:270px;top:8px;position:absolute;}
+  .p2{top:35%;position: absolute;right:50%;}
+</style>
+
+    </head>
+<body>
+    <div class="back1">   <div class="p1">     <input name="button" type="image" src="btn_l.png" onclick="changeImg2()" style="" /> </div></div>
+            <div class="a">
+        <img id=obj src ="1.jpg" style="width=200 height=150   border =0 ">       </div>
+  <div class="back2">  <div class="p2"> <input name="button" type="image" src="btn_r.png" onclick="changeImg1()" style="" /></div></div>
+</body>
+</html> 

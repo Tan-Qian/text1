@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>动画</title>
+        <style type="text/css">
+        .c{
+            width:200px;
+            height:200px;
+            border:10px solid blue;
+            border-bottom-color:white;
+            border-top-color:white;
+            border-right-color:white;
+            border-radius: 50%;
+            -webkit-animation:circle 1s infinite linear;
+        }
+        @-webkit-keyframes circle{
+            0%{transform: rotate(0deg);}
+            25%{border:10px solid darkblue;
+             border-bottom-color:blue;
+            border-top-color:white;
+            border-right-color:white
+            }
+
+
+
+            50%{border:10px solid blue;
+             border-bottom-color:lightblue;
+            border-top-color:white;
+            border-right-color:white;
+            }
+
+            75%
+            {border:10px solid lightblue;
+             border-bottom-color:white;
+            border-top-color:white;
+            border-right-color:white;
+            }
+            100%{transform: rotate(360deg);}
+        
+        
+        }
+        </style>
+    </head>
+    <body>
+        <div class="c"></div>
+    </body>
+</html>
